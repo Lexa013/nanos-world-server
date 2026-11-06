@@ -6,8 +6,9 @@ RUN mkdir -p /nanos-world-server
 RUN steamcmd \
     +force_install_dir /nanos-world-server \
     +login anonymous \
-    +app_update 1936830 validate \
+    +app_update 1936830 \
     -beta bleeding-edge \
+    validate \
     +quit
 
 # Verify files were downloaded
